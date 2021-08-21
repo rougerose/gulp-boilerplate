@@ -1,5 +1,5 @@
 {
-  "name": "gulp",
+  "name": "gulp-boilerplate",
   "private": true,
   "scripts": {
     "watch": "gulp",
