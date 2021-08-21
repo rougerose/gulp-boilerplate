@@ -1,0 +1,28 @@
+{
+  "name": "gulp",
+  "private": true,
+  "scripts": {
+    "watch": "gulp",
+    "dev": "gulp dev",
+    "build": "NODE_ENV=production gulp build"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "autoprefixer": "^10.3.1",
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-size": "^4.0.1",
+    "postcss": "^8.3.6",
+    "postcss-csso": "^5.0.1",
+    "rollup": "^2.56.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.38.0",
+    "tailwindcss": "^2.2.7"
+  }
+}
