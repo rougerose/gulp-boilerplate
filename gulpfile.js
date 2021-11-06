@@ -6,6 +6,7 @@ const del = require("del");
 const browserSync = require("browser-sync");
 const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
+const rename = require("gulp-rename");
 const size = require("gulp-size");
 const rollup = require("rollup");
 const { nodeResolve } = require("@rollup/plugin-node-resolve");
@@ -27,13 +28,16 @@ const css = function (done) {
   // Make sure this feature is activated before running
   if (!config.tasks.css) return done();
 
-  return src(config.css.src + "**/*.scss")
-    .pipe(sass.sync().on("error", sass.logError))
-    .pipe(dest(config.css.src))
-    .pipe(postcss())
-    .pipe(size({ title: "CSS", gzip: true, showFiles: true }))
-    .pipe(dest(config.css.dist))
-    .pipe(browserSync.stream());
+  return (
+    src(config.scss.src + "**/*.scss")
+      .pipe(sass.sync().on("error", sass.logError))
+      // .pipe(dest(config.css.src))
+      .pipe(postcss())
+      .pipe(rename({ basename: "styles" }))
+      .pipe(size({ title: "CSS", gzip: true, showFiles: true }))
+      .pipe(dest(config.css.dest))
+      .pipe(browserSync.stream())
+  );
 };
 
 // Scripts task

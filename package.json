@@ -16,6 +16,7 @@
     "del": "latest",
     "gulp": "latest",
     "gulp-postcss": "latest",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "latest",
     "gulp-size": "latest",
     "postcss": "latest",

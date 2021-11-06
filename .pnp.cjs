@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["del", "npm:6.0.0"],
             ["gulp", "npm:4.0.2"],
             ["gulp-postcss", "virtual:9b8187532e4231ef6552a81c9c3d8016fbed597ee0727a09a77f761cad380d51d79e549e766b8c53ce795e85dca56b284b70e70ab9ba73d0a49dccec1e635317#npm:9.0.1"],
+            ["gulp-rename", "npm:2.0.0"],
             ["gulp-sass", "npm:5.0.0"],
             ["gulp-size", "virtual:9b8187532e4231ef6552a81c9c3d8016fbed597ee0727a09a77f761cad380d51d79e549e766b8c53ce795e85dca56b284b70e70ab9ba73d0a49dccec1e635317#npm:4.0.1"],
             ["postcss", "npm:8.3.11"],
@@ -2791,6 +2792,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["del", "npm:6.0.0"],
             ["gulp", "npm:4.0.2"],
             ["gulp-postcss", "virtual:9b8187532e4231ef6552a81c9c3d8016fbed597ee0727a09a77f761cad380d51d79e549e766b8c53ce795e85dca56b284b70e70ab9ba73d0a49dccec1e635317#npm:9.0.1"],
+            ["gulp-rename", "npm:2.0.0"],
             ["gulp-sass", "npm:5.0.0"],
             ["gulp-size", "virtual:9b8187532e4231ef6552a81c9c3d8016fbed597ee0727a09a77f761cad380d51d79e549e766b8c53ce795e85dca56b284b70e70ab9ba73d0a49dccec1e635317#npm:4.0.1"],
             ["postcss", "npm:8.3.11"],
@@ -2852,6 +2854,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [
             "@types/postcss",
             "postcss"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["gulp-rename", [
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/gulp-rename-npm-2.0.0-2a2997d9ce-b9add0d130.zip/node_modules/gulp-rename/",
+          "packageDependencies": [
+            ["gulp-rename", "npm:2.0.0"]
           ],
           "linkType": "HARD",
         }]

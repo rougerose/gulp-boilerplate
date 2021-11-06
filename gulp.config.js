@@ -4,13 +4,16 @@ module.exports = {
     notify: false,
   },
   tailwind: "tailwind.config.js",
+  scss: {
+    src: "src/scss/",
+  },
   css: {
     src: "src/css/",
-    dist: "dist/css/",
+    dest: "dist/css/",
   },
   js: {
     src: ["src/js/main.js"],
-    dist: "dist/js/",
+    dest: "dist/js/",
     name: "main.js",
   },
   clean: ["dist/**/*", "!dist/"],

@@ -2377,6 +2377,7 @@ fsevents@~2.3.2:
     del: latest
     gulp: latest
     gulp-postcss: latest
+    gulp-rename: ^2.0.0
     gulp-sass: latest
     gulp-size: latest
     postcss: latest
@@ -2427,6 +2428,13 @@ fsevents@~2.3.2:
   peerDependencies:
     postcss: ^8.0.0
   checksum: f27a7ebdb71b2bcd59ac5fbbc15ab877b22585a9352884a81395ffb8fe6230dfc8106cdf93075e54685c7bf249a0bd1ad2f6fbeb452bdf81a01c3adcc3c6fff4
+  languageName: node
+  linkType: hard
+
+"gulp-rename@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "gulp-rename@npm:2.0.0"
+  checksum: b9add0d130487dee6067206eebfc3867e4e254117edef154e8c270e3111b112335439ac1cac1519d6a32541343e04bd299484253a333b4e34c7d430039953e99
   languageName: node
   linkType: hard
 
